@@ -1,0 +1,40 @@
+.footer-content {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  .footer-el1 {
+    background-color: #80d6ff;
+    max-width: 310px;
+    border-radius: 10px;
+    padding: 20px 15px;
+    position: relative;
+    @media (max-width: 768px) {
+      max-width: 160px;
+      padding: 0 10px;
+    }
+    span {
+      position: relative;
+      z-index: 5;
+      font-family: $base-font-sans-serif;
+      font-size: 50px;
+      line-height: 50px;
+      color: rgba(0, 0, 0, 0.35);
+      @media (max-width: 768px) {
+        font-size: 24px;
+      }
+    }
+  }
+  .footer-el2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 38px;
+    left: 0;
+    background: #c1a2ff;
+    transform: rotate(-15deg);
+    @media (max-width: 768px) {
+      width: 100%;
+      top: 20px;
+    }
+  }
+}

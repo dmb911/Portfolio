@@ -1,0 +1,67 @@
+[
+    {
+        "abbr": "AKAM",
+        "name": "Akamai Technologies",
+        "sctr": "93.9"
+    },
+    {
+        "abbr": "MU",
+        "name": "Micron",
+        "sctr": "40.1"
+    },
+    {
+        "abbr": "FHN",
+        "name": "First Horizon",
+        "sctr": "66.4"
+    },
+    {
+        "abbr": "LSI",
+        "name": "LSI",
+        "sctr": "47.6"
+    },
+    {
+        "abbr": "ALTR",
+        "name": "Altera",
+        "sctr": "39.9"
+    },
+    {
+        "abbr": "ATI",
+        "name": "Allegheny",
+        "sctr": "33.0"
+    },
+    {
+        "abbr": "MUS",
+        "name": "MUSA Corporation",
+        "sctr": "95.9"
+    },
+    {
+        "abbr": "FHN",
+        "name": "First Horizon",
+        "sctr": "85.0"
+    },
+    {
+        "abbr": "HBAN",
+        "name": "Huntington Banschare",
+        "sctr": "69.0"
+    },
+    {
+        "abbr": "ALTO",
+        "name": "Altolandia",
+        "sctr": "44.1"
+    },
+    {
+        "abbr": "JOPA",
+        "name": "Jopa Telecom",
+        "sctr": "44.1"
+    },
+    {
+        "abbr": "AKAM",
+        "name": "Jopa Telecom",
+        "sctr": "33.3"
+    },
+    {
+        "abbr": "ALTO",
+        "name": "Altolandia",
+        "sctr": "44.1"
+    }
+]

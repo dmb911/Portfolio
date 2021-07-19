@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-3.5.1.min.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="container">
+                <div id="home" class="header_content">
+                        <a href="#"><span class="logo">Frispes.</span></a>
+                        
+                        <div class="mobile_menu">
+                            <div class="burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <nav class="menu">
+                                <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#work">Workspace</a></li>
+                                    <li><a href="#service">Service</a></li>
+                                    <li><a href="#events">Events</a></li>
+                                    <li><a href="#reviews">Reviews</a></li>
+                                    <li><a href="#contact">Contact Us</a></li>
+                                    
+                                </ul>
+                            </nav>
+                        </div>
+        
+                        <nav>
+                            <ul class="desktop_menu">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#work">Workspace</a></li>
+                                <li><a href="#service">Service</a></li>
+                                <li><a href="#events">Events</a></li>
+                                <li><a href="#reviews">Reviews</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
+                            </ul>
+                        </nav>
+        
+                        <div class="log_in">
+                            <a class="btn btn_secondary" href="#">Log In</a>
+                            <a class="btn btn_secondary"  href="#">Sign Up</a>
+                        </div>
+                </nav>
+            </div>
+         </header>
+        <main id="main">
+            <section class="main-section">
+                <div class="intro">
+                    <div class="container">
+                        <div class="intro_wrap">
+                            <div class="intro_title">
+                                <span class="subtitle">Introducing</span>
+                                <h1>
+                                    <mark>Revolutionary</mark> co-working space to realize your innovation
+                                </h1>
+                            </div>
+
+                            <p>In frispes, we spearhead new initiatives and provide mentorship to a new startup, and
+                                help grow their
+                                opportunities in
+                                key local, regional and global markets
+                            </p>
+                        </div>
+                        <div class="form">
+                            <form class="form_space">
+                                <h3>Find your space now</h3>
+                                <div class="form_selects">
+                                    <label for="country" class="form_type">Location</label>
+                                    <span class="form_arrow"><img src="./images/check.svg" alt=""></span>
+                                    <select id="country">
+                                        <option value="">Malang, Indonesia</option>
+                                        <option value="">Indonesia, Malang</option>
+                                        <option value="">Wroclaw, Poland</option>
+                                    </select>
+                                </div>
+                                <div class="form_selects">
+                                    <label for="type" class="form_type">Type</label>
+                                    <span class="form_arrow"><img src="./images/check.svg" alt=""></span>
+                                    <select id="type">
+                                        <option value="">Private Office</option>
+                                        <option value="">Private Office</option>
+                                        <option value="">Private Office</option>
+                                    </select>
+                                </div>
+                                <div class="form_selects">
+                                    <label for="datepicker" class="form_type">Date</label>
+                                    <p><input type="text" id="datepicker" value="09 Aug 2020"></p>
+                                    <label for="datepicker" class="form_arrow"><img src="./images/check.svg"
+                                            alt=""></label>
+                                </div>
+                                <a href="#" class="btn btn_primary btn_form">FIND MY SPACE</a>
+                            </form>
+                        </div>
+                    </div>
+                    <img class="intro_img" src="./images/Intro.jpg" alt="Intro">
+                </div>
+
+
+                <div id="work" class="our_spaces">
+                    <div class="container">
+                        <div class="spaces_wrap">
+                            <div class="swiper-button-next arrow_space_next"></div>
+                            <div class="swiper-button-prev arrow_space_prev"></div>
+
+                            <div class="our_spaces_title">
+                                <h2>Our Spaces</h2>
+                                <p>Our space is designed to give you a different experience when working with your team
+                                    or personally</p>
+                            </div>
+                            <div class="swiper-container mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider_wrap">
+                                            <div class="slider_img">
+                                                <img src="./images/Our_space_card_1.jpg">
+                                                <a href="#" class="btn btn_primary btn_card">
+                                                    <img src="./images/check.svg" alt="check">
+                                                </a>
+                                            </div>
+
+                                            <span>Working with team</span>
+
+                                            <div class="front_card">
+                                                <img src="./images/Our_space_mask.png" alt="mask">
+                                                <h4>Working with team</h4>
+                                                <p>Comfortable space, Full speed wifi, Free coffe & Snack
+                                                    and many more</p>
+                                                <a href="#" class="btn btn_primary btn_after">
+                                                    <span>Check avaibility</span>
+                                                    <img src="./images/check.svg" alt="check">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider_wrap">
+                                            <div class="slider_img">
+                                                <img src="./images/Our_space_card_2.jpg">
+                                                <a href="#" class="btn btn_primary btn_card">
+                                                    <img src="./images/check.svg" alt="check">
+                                                </a>
+                                            </div>
+
+                                            <span>Private Space</span>
+
+                                            <div class="front_card">
+                                                <img src="./images/Our_space_mask.png" alt="mask">
+                                                <h4>Private Space</h4>
+                                                <p>Comfortable space, Full speed wifi, Free coffe & Snack
+                                                    and many more</p>
+                                                <a href="#" class="btn btn_primary btn_card btn_after">
+                                                    <span>Check avaibility</span>
+                                                    <img src="./images/check.svg" alt="check">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider_wrap">
+                                            <div class="slider_img">
+                                                <img src="./images/Our_space_card_1.jpg">
+                                                <a href="#" class="btn btn_primary btn_card">
+                                                    <img src="./images/check.svg" alt="check">
+                                                </a>
+                                            </div>
+
+                                            <span>Custom Office</span>
+
+                                            <div class="front_card">
+                                                <img src="./images/Our_space_mask.png" alt="mask">
+                                                <h4>Custom Office</h4>
+                                                <p>Comfortable space, Full speed wifi, Free coffe & Snack
+                                                    and many more</p>
+                                                <a href="#" class="btn btn_primary btn_card btn_after">
+                                                    <span>Check avaibility</span>
+                                                    <img src="./images/check.svg" alt="check">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider_wrap">
+                                            <div class="slider_img">
+                                                <img src="./images/Our_space_card_1.jpg">
+                                                <a href="#" class="btn btn_primary btn_card">
+                                                    <img src="./images/check.svg" alt="check">
+                                                </a>
+                                            </div>
+
+                                            <span>Custom Office</span>
+
+                                            <div class="front_card">
+                                                <img src="./images/Our_space_mask.png" alt="mask">
+                                                <h4>Custom Office</h4>
+                                                <p>Comfortable space, Full speed wifi, Free coffe & Snack
+                                                    and many more</p>
+                                                <a href="#" class="btn btn_primary btn_card btn_after">
+                                                    <span>Check avaibility</span>
+                                                    <img src="./images/check.svg" alt="check">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider_wrap">
+                                            <div class="slider_img">
+                                                <img src="./images/Our_space_card_1.jpg">
+                                                <a href="#" class="btn btn_primary btn_card">
+                                                    <img src="./images/check.svg" alt="check">
+                                                </a>
+                                            </div>
+
+                                            <span>Custom Office</span>
+
+                                            <div class="front_card">
+                                                <img src="./images/Our_space_mask.png" alt="mask">
+                                                <h4>Custom Office</h4>
+                                                <p>Comfortable space, Full speed wifi, Free coffe & Snack
+                                                    and many more</p>
+                                                <a href="#" class="btn btn_primary btn_card btn_after">
+                                                    <span>Check avaibility</span>
+                                                    <img src="./images/check.svg" alt="check">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider_wrap">
+                                            <div class="slider_img">
+                                                <img src="./images/Our_space_card_1.jpg">
+                                                <a href="#" class="btn btn_primary btn_card">
+                                                    <img src="./images/check.svg" alt="check">
+                                                </a>
+                                            </div>
+
+                                            <span>Custom Office</span>
+
+                                            <div class="front_card">
+                                                <img src="./images/Our_space_mask.png" alt="mask">
+                                                <h4>Custom Office</h4>
+                                                <p>Comfortable space, Full speed wifi, Free coffe & Snack
+                                                    and many more</p>
+                                                <a href="#" class="btn btn_primary btn_card btn_after">
+                                                    <span>Check avaibility</span>
+                                                    <img src="./images/check.svg" alt="check">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-pagination"></div>
+                                <div class="counter_wrapper">
+                                    <span class="current-slide"></span>
+                                    <span class='total-slides'></span>
+                                </div>
+                            </div>
+
+                            <div class="why_frispes">
+                                <div class="why_frispes_reasons">
+                                    <div class="reason_wrap">
+                                        <img src="./images/rooms.svg" alt="img">
+                                        <div class="reason_descr">
+                                            <h4>500+</h4>
+                                            <span>Meeting rooms</span>
+                                        </div>
+                                    </div>
+                                    <div class="reason_wrap">
+                                        <img src="./images/Event.svg" alt="img">
+                                        <div class="reason_descr">
+                                            <h4>100+</h4>
+                                            <span>Event spaces</span>
+                                        </div>
+                                    </div>
+                                    <div class="reason_wrap">
+                                        <img src="./images/Countries.svg" alt="img">
+                                        <div class="reason_descr">
+                                            <h4>60+</h4>
+                                            <span>Countries</span>
+                                        </div>
+                                    </div>
+                                    <div class="reason_wrap">
+                                        <img src="./images/wifi.svg" alt="img">
+                                        <div class="reason_descr">
+                                            <h4>500 Mbps</h4>
+                                            <span>Internet speed</span>
+                                        </div>
+                                    </div>
+                                    <div class="reason_wrap">
+                                        <img src="./images/mentors.svg" alt="img">
+                                        <div class="reason_descr">
+                                            <h4>5K+</h4>
+                                            <span>Startup mentors</span>
+                                        </div>
+                                    </div>
+                                    <div class="reason_wrap">
+                                        <img src="./images/inside.svg" alt="img">
+                                        <div class="reason_descr">
+                                            <h4>200+</h4>
+                                            <span>Communities inside</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="why_frispes_description">
+                                    <span class="subtitle subtitle_secondary">Why Frispes</span>
+                                    <h2>We revolutionize your workspace</h2>
+                                    <p>With a decade of insights and expertise, we're decided to reimagine co-working
+                                        space, designed to help a new startup
+                                        grow up and realize their ideas so they can give a positive impacts on many
+                                        people</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div id="service" class="our_facilities">
+                    <div class="container">
+                        <div class="our_facilities_wrap">
+                            <div class="our_facilities_title">
+                                <span class="subtitle">Our Facilities</span>
+                                <h2>All facilities are designed to meet all your needs</h2>
+                            </div>
+
+                            <div class="our_facilities_tabs">
+                                <div class="pagination_wrap">
+                                    <div class="our_facilities_pagination">
+                                        <ul class="visual-pagination-tabs"></ul>
+                                        <div class="counter-wrap tab-counter">
+                                            <span class="current-tab current-slide"></span>
+                                            <span class="total-tab total-slides"></span>
+                                        </div>
+                                    </div>
+                                    <ul class="tabset">
+                                        <li>
+                                            <a class="btn btn_primary btn_tab" href="#tab1-0">Spacious parking area</a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn_primary btn_tab" href="#tab2-0">Comfortable spaces</a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn_primary btn_tab" href="#tab3-0">Cozy cafe</a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn_primary btn_tab" href="#tab4-0">Child playground</a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn_primary btn_tab" href="#tab5-0">Outdoor spaces</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content">
+                                    <div id="tab1-0"><img src="./images/tab_1.jpg" alt="tab"></div>
+                                    <div id="tab2-0"><img src="./images/tab_2.jpg" alt="tab"></div>
+                                    <div id="tab3-0"><img src="./images/tab_3.jpg" alt="tab"></div>
+                                    <div id="tab4-0"><img src="./images/tab_4.jpg" alt="tab"></div>
+                                    <div id="tab5-0"><img src="./images/tab_5.jpg" alt="tab"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="frispes_gallery">
+                    <div class="container">
+                        <div class="frispes_gallary_title">
+                            <span class="subtitle">Frispes gallery</span>
+                            <h2>Immersive beautiful <br> co-working space gallery</h2>
+                            <div class="gallery_arrows_wrap"></div>
+                        </div>
+
+                    </div>
+                    <div class="gallery_slider">
+                        <div><img src="./images/gallery_2.jpg" alt="img"></div>
+                        <div><img src="./images/gallery_2.jpg" alt="img"></div>
+                        <div><img src="./images/gallery_2.jpg" alt="img"></div>
+                        <div><img src="./images/gallery_2.jpg" alt="img"></div>
+                        <div><img src="./images/gallery_2.jpg" alt="img"></div>
+                        <div><img src="./images/gallery_2.jpg" alt="img"></div>
+                    </div>
+                </div>
+
+
+
+                <div class="who_use">
+                    <div class="container">
+                        <h2>Who uses Frispes?</h2>
+                        <p>Big brands, small bussiness, new startuo and inividuals</p>
+                        <div class="who_use_company">
+                            <a href=""><img src="./images/logo1.svg" alt="logo"></a>
+                            <a href=""><img src="./images/logo2.svg" alt="logo"></a>
+                            <a href=""><img src="./images/logo3.svg" alt="logo"></a>
+                            <a href=""><img src="./images/logo4.svg" alt="logo"></a>
+                            <a href=""><img src="./images/logo5.svg" alt="logo"></a>
+                            <a href=""><img src="./images/logo6.svg" alt="logo"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="reviews" class="reviews">
+                    <div class="container">
+                        <div class="reviews_wrap">
+                            <div class="reviews_head">
+                                <div class="reviews_title">
+                                    <div class="subtitle">Reviews</div>
+                                    <h2>What our customers are saying</h2>
+                                </div>
+
+                                <div class="reviews_arrows_wrap"></div>
+                            </div>
+
+                            <div class="reviews_slider">
+                                <div>
+                                    <p>Our team has been working at frispes for almost 2 months because our office still
+                                        closed. During working at
+                                        frispes, we
+                                        feel a new experience, we can feel working with a beautiful, modern, and
+                                        comfortable space. And cozy cafe
+                                        with
+                                        high-speed internet in there. Thank you for frispes and team.</p>
+                                    <div class="logo_wrap">
+                                        <img src="./images/reviews_photo_1.png" alt="photo">
+                                        <div class="logo_descr">
+                                            <p class="logo_name">Pedro Ibanez</p>
+                                            <p class="logo_prof">UI Designer at Google</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>The high-speed internet at frispes was so amazing. I can get best experience when
+                                        running video call with my
+                                        clients.
+                                        Frispes has spacious and safe parking area, that’s what i need because i used to
+                                        work as freelancer for a
+                                        long time.</p>
+                                    <div class="logo_wrap">
+                                        <img src="./images/reviews_photo_2.png" alt="photo">
+                                        <div class="logo_descr">
+                                            <p class="logo_name">Raymond Thual</p>
+                                            <p class="logo_prof">Professional Freelancer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Our team has been working at frispes for almost 2 months because our office still
+                                        closed. During working at
+                                        frispes,
+                                        we
+                                        feel a new experience, we can feel working with a beautiful, modern, and
+                                        comfortable space. And cozy cafe
+                                        with
+                                        high-speed internet in there. Thank you for frispes and team.</p>
+                                    <div class="logo_wrap">
+                                        <img src="./images/reviews_photo_3.png" alt="photo">
+                                        <div class="logo_descr">
+                                            <p class="logo_name">Juliy Lonty</p>
+                                            <p class="logo_prof">QA Manager</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Just three words : Frispes is Awesome!</p>
+                                    <div class="logo_wrap">
+                                        <img src="./images/reviews_photo_2.png" alt="photo">
+                                        <div class="logo_descr">
+                                            <p class="logo_name">Yuli Berlian</p>
+                                            <p class="logo_prof">IOS Dev at Tokopedia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Our team has been working at frispes for almost 2 months because our office still
+                                        closed. During working at
+                                        frispes,
+                                        we
+                                        feel a new experience, we can feel working with a beautiful, modern, and
+                                        comfortable space. And cozy cafe
+                                        with
+                                        high-speed internet in there. Thank you for frispes and team.</p>
+                                    <div class="logo_wrap">
+                                        <img src="./images/reviews_photo_1.png" alt="photo">
+                                        <div class="logo_descr">
+                                            <p class="logo_name">Fred Kosinsky</p>
+                                            <p class="logo_prof">Boss</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Just three words : Frispes is Awesome!</p>
+                                    <div class="logo_wrap">
+                                        <img src="./images/reviews_photo_2.png" alt="photo">
+                                        <div class="logo_descr">
+                                            <p class="logo_name">Yuli Berlian</p>
+                                            <p class="logo_prof">IOS Dev at Tokopedia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Just three words : Frispes is Awesome!</p>
+                                    <div class="logo_wrap">
+                                        <img src="./images/reviews_photo_2.png" alt="photo">
+                                        <div class="logo_descr">
+                                            <p class="logo_name">Yuli Berlian</p>
+                                            <p class="logo_prof">IOS Dev at Tokopedia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Just three words : Frispes is Awesome!</p>
+                                    <div class="logo_wrap">
+                                        <img src="./images/reviews_photo_2.png" alt="photo">
+                                        <div class="logo_descr">
+                                            <p class="logo_name">Yuli Berlian</p>
+                                            <p class="logo_prof">IOS Dev at Tokopedia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="answers">
+                    <div class="container">
+                        <div class="answers_wrap">
+                            <h2>Find the answers to anything you need in our Help Center</h2>
+                            <div class="answers_cards">
+                                <div class="answers_item">
+                                    <h5>How do I know if a space is available?</h5>
+                                    <a class="btn btn_primary btn_answer btn_answer_secondary">
+                                        <img src="./images/check.svg" alt="check">
+                                        <span></span>
+                                    </a>
+                                </div>
+                                <div class="answers_item">
+                                    <h5>How do i book a space?</h5>
+                                    <a class="btn btn_primary btn_answer btn_answer_secondary">
+                                        <img src="./images/check.svg" alt="check">
+                                        <span></span>
+                                    </a>
+                                </div>
+                                <div class="answers_item">
+                                    <h5>How do reviews work?</h5>
+                                    <a class="btn btn_primary btn_answer btn_answer_secondary">
+                                        <img src="./images/check.svg" alt="check">
+                                        <span></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <a class="btn btn_secondary btn_more" href="#">
+                                <span>More question</span>
+                                <img src="./images/check_orange_right.svg" alt="check">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="events" class="news">
+                    <div class="container">
+                        <div class="news_wrap">
+                            <div class="news_title">
+                                <h2>News, events and insights for you</h2>
+                                <a href="#" class="btn btn_secondary btn_more">
+                                    <span>See more</span>
+                                    <img src="./images/check_orange_right.svg" alt="check">
+                                </a>
+                            </div>
+                            <div class="news_content">
+                                <div class="news_item news_item_preview">
+                                    <img src="./images/news1.jpg" alt="img">
+                                    <div class="news_preview_descr">
+                                        <h4>Google I / O 2020 news update</h4>
+                                        <p>Out of concern for the health and safety of our developers, employees, and
+                                            local communities — and in line with
+                                            recent
+                                            ...</p>
+                                        <div class="logo_wrap">
+                                            <img src="./images/news_photo.png" alt="photo">
+                                            <div class="logo_descr">
+                                                <p class="logo_name">Sundar pichai</p>
+                                                <p class="logo_prof">CEO at Google</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news_item">
+                                    <img src="./images/news2.jpg" alt="img">
+                                    <div class="news_item_descr">
+                                        <h6>Minimal workspace for inspirations</h6>
+                                        <p>Anthony Masional</p>
+                                    </div>
+                                </div>
+                                <div class="news_item">
+                                    <img src="./images/news3.jpg" alt="img">
+                                    <div class="news_item_descr">
+                                        <h6>Does productivity increase when working remotely ?</h6>
+                                        <p>Franck Martin</p>
+                                    </div>
+                                </div>
+                                <div class="news_item">
+                                    <img src="./images/news4.jpg" alt="img">
+                                    <div class="news_item_descr">
+                                        <h6>Morning routine to boost your mood</h6>
+                                        <p>Elizabeth swan</p>
+                                    </div>
+                                </div>
+                                <div class="news_item">
+                                    <img src="./images/news5.jpg" alt="img">
+                                    <div class="news_item_descr">
+                                        <h6>5+ tips to find comfortable co-working space</h6>
+                                        <p>Mykola Ilschenko</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+                <div class="footer_first">
+                    <div class="container">
+                        <div class="footer_content">
+                            <div class="footer_title">
+                                <span class="subtitle subtitle_secondary">Became a member</span>
+                                <h2>Ready to try different work experience now?</h2>
+                                <p>Get the best working experience that you never feel before</p>
+                                <a href="#" class="btn btn_primary btn_footer">SIGN UP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="footer_second">
+                    <div class="container">
+                       <div class="footer_second_content">
+                            <div class="footer_second_logo">
+                                <span>Frispes</span>
+                                <p>We offer comfortable spaces, cozy cafe, high-speed internet, spacious parking area and many more for your best
+                                    workspaces and meetings</p>
+                                <div id="contact" class="contacts">
+                                    <a target="_blank" href="https://instagram.com/"><img src="./images/Instagram.svg" alt="logo"></a>
+                                    <a target="_blank" href="https://youtube.com"><img src="./images/YouTube.svg" alt="logo"></a>
+                                    <a target="_blank" href="https://facebook.com"><img src="./images/Facebook.svg" alt="logo"></a>
+                                </div>
+                            </div>
+                            <div class="footer_second_info">
+                                <div class="footer_menu">
+                                    <p>Spaces</p>
+                                    <ul>
+                                        <li><a href="#">Co-working spaces</a></li>
+                                        <li><a href="#">Meeting rooms</a></li>
+                                        <li><a href="#">Event spaces</a></li>
+                                        <li><a href="#">Child playground</a></li>
+                                        <li><a href="#">Cafe & resto</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer_menu">
+                                    <p>Company</p>
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Pricing</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">Press</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer_menu">
+                                    <p>Support</p>
+                                    <ul>
+                                        <li><a href="#">FAQs</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Help</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer_menu">
+                                    <p>Contact Us</p>
+                                    <ul>
+                                        <li><a href="mailto:Hello@frispes.com">E. Hello@frispes.com</a></li>
+                                        <li>A. Jalan Jayakatwang No.301 <br>
+                                            Ngasem, Kediri</li>
+                                        <li><a href="tel:+6282334670000">P. (+62) 82334670000</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+        </footer>
+    </div>
+</body>
+
+</html>

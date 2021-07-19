@@ -1,0 +1,197 @@
+.subtitle {
+  display: inline-block;
+  font-family: $base-font-family;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: $black;
+  position: relative;
+  padding: 0 90px 0 0;
+  margin-bottom: 8px;
+  @include media("<=desktop") {
+    font-size: 18px;
+  }
+  @include media("<=tablet") {
+    margin-bottom: 20px;
+  }
+  @include media("<=450px") {
+    font-size: 14px;
+    padding: 0 70px 0 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 73px;
+    height: 2px;
+    background: $black;
+    right: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    @include media("<=450px") {
+      width: 53px;
+    }
+  }
+}
+
+.subtitle_secondary {
+  color: $white;
+  &:after {
+    background: $white;
+  }
+}
+
+mark {
+  background: transparent;
+  color: #dd2c00;
+}
+
+.btn {
+  padding: 7px 15px;
+  color: $white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: $base-font-family;
+}
+
+.btn_primary {
+  background: $orange;
+  color: $white;
+}
+
+.btn_secondary {
+  background: transparent;
+  color: $orange;
+}
+
+.btn_more {
+  span {
+    font-family: $base-font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-right: 15px;
+  }
+}
+
+.arrow_space_next {
+  position: absolute;
+  display: block;
+  top: 11%;
+  right: 0;
+  @include media("<=tablet") {
+    display: none;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    background: url(../images/arrow_right.svg) 100% no-repeat;
+    width: 90px;
+    height: 25px;
+    top: 0;
+    right: 0;
+    @include media("<=desktop") {
+      width: 60px;
+      height: 20px;
+    }
+  }
+  @include media("<=widescreen") {
+    top: 14%;
+    right: 33px;
+  }
+  @include media("<=desktop") {
+    top: 14.9%;
+    left: 58%;
+    transform: translateX(-50%);
+  }
+  @include media("<=tablet") {
+    left: 65%;
+  }
+}
+
+.arrow_space_prev {
+  position: absolute;
+  display: block;
+  top: 11%;
+  right: 115px;
+  left: auto;
+  @include media("<=tablet") {
+    display: none;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    background: url(../images/arrow_left.svg) 100% no-repeat;
+    width: 53px;
+    height: 25px;
+    top: 0;
+    right: 0;
+    @include media("<=desktop") {
+      height: 17px;
+    }
+  }
+  @include media("<=widescreen") {
+    top: 14%;
+    right: 150px;
+  }
+  @include media("<=desktop") {
+    top: 15%;
+    left: 43%;
+  }
+  @include media("<=tablet") {
+    left: 40%;
+    transform: translateX(-50%);
+  }
+}
+
+.current-slide {
+  font-family: $base-font-family;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: $black;
+  &:after {
+    content: "/";
+    color: $blue;
+    font-size: 12px;
+    padding: 0 0 0 2px;
+  }
+}
+.total-slides {
+  font-family: $base-font-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: $gray;
+}
+
+.logo_wrap {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 15px;
+  }
+  .logo_descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .logo_name {
+      font-family: $base-font-family;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 28px;
+      color: $white;
+      margin: 0;
+    }
+    .logo_prof {
+      font-family: $base-font-family;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: $white;
+      margin: 0;
+    }
+  }
+}

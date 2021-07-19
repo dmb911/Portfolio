@@ -1,0 +1,227 @@
+body.lock {
+  overflow: hidden;
+}
+
+.mobile_menu {
+  @include media(">tablet") {
+    display: none;
+  }
+  div {
+    display: block;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background-color: $orange;
+    height: 40px;
+    width: 40px;
+    z-index: 9999999;
+    cursor: pointer;
+    box-sizing: content-box;
+    span {
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 23px;
+      height: 2px;
+      background-color: #fff;
+      border-radius: 13px;
+      transition-duration: 0.4s;
+      &:nth-child(1) {
+        top: 12px;
+      }
+      &:nth-child(2) {
+        top: 19px;
+      }
+      &:nth-child(3) {
+        bottom: 12px;
+      }
+    }
+
+    &.active {
+      top: 30px;
+      span:nth-child(1) {
+        transform: translate(-15px, 9px) rotate(-45deg);
+        left: 23px;
+        top: 9px;
+      }
+      span:nth-child(2) {
+        transition-duration: 0s;
+        opacity: 0;
+      }
+      span:nth-child(3) {
+        transform: translate(-15px, -9px) rotate(45deg);
+        left: 23px;
+        top: 27px;
+      }
+    }
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 16px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 9999990;
+    transition-duration: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    &.open {
+      background-color: $orange;
+      width: 100%;
+      height: 100%;
+      right: 0px;
+      bottom: 0px;
+      border-radius: 0;
+    }
+    ul {
+      display: none;
+      &.show {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: $orange;
+      }
+      li {
+        font-family: $base-font-family;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        width: 100%;
+        opacity: 0;
+        animation-name: fadein;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        &:not(:last-child) {
+          margin-bottom: 22px;
+        }
+      }
+      a {
+        font-size: 24px;
+        font-family: $base-font-family;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.desktop_menu {
+  @extend %listreset;
+  display: flex;
+  padding: 7px 0 0 100px;
+  @include media("<=widescreen") {
+    padding-left: 50px;
+  }
+  @include media("<=desktop") {
+    padding: 35px 0 0 0;
+  }
+  @include media("<=tablet") {
+    display: none;
+    position: absolute;
+    background: #3e2597;
+    width: 100%;
+    margin-left: -10px;
+    padding-left: 10px;
+  }
+  li {
+    padding: 5px 15px;
+    display: inline-block;
+    font-family: $base-font-family;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    color: $black;
+    transition: 0.3s;
+    &:hover {
+      background-color: $orange;
+      a {
+        color: $white;
+      }
+    }
+    @include media("<=tablet") {
+      display: block;
+    }
+    a {
+      display: block;
+    }
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0 0 0;
+  @include media("<=desktop") {
+    justify-content: center;
+  }
+  @include media("<=tablet") {
+    padding: 0;
+    min-height: 60px;
+  }
+  .logo {
+    font-family: $PlayfairDisplay;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: $blue;
+    @include media("<=desktop") {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+    @include media("<=tablet") {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .log_in {
+    z-index: 5;
+    @include media("<=desktop") {
+      position: absolute;
+      top: 25px;
+      right: 30px;
+    }
+    @include media("<=tablet") {
+      width: 48%;
+      top: 90px;
+      right: 61px;
+    }
+    .btn {
+      padding: 12px 24px;
+      font-size: 16px;
+      @include media("<=tablet") {
+        padding: 5px 10px;
+        font-size: 12px;
+      }
+      &:hover {
+        background: $orange;
+        color: $white;
+      }
+    }
+  }
+}
